@@ -25,12 +25,12 @@ npm run build      # 产物在 dist/，丢到任意静态托管即可
 
 ## 给老师：怎么改成你的讲座（AI 辅助）
 
-在 Claude Code / Cursor 里直接说人话，比如：
+本仓库**自带一个 Claude Code skill `/add-slide`**（`.claude/skills/add-slide/`）。在 Claude Code 里直接说人话即可：
+- `/add-slide 讲 XXX 的一页`，或 “按这个大纲加 8 页 slide：……”
 - “把封面标题改成《XXX》，副标题改成 YYY”
-- “按这个大纲加 8 页 slide：……”
 - “把右上角 logo 换成我学校的”
 
-AI 会照 `CLAUDE.md` 的约定动**内容文件**（见下表），不碰引擎。也可以自己手改 —— 入口都在 `src/components/slides/` 和 `src/App.tsx`。
+AI 会照 skill + `CLAUDE.md` 的约定动**内容文件**（见下表）、不碰引擎，并自动 `build` 验证。也可以自己手改 —— 入口都在 `src/components/slides/` 和 `src/App.tsx`。
 
 ## 🚦 两类文件，别搞混
 
