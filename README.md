@@ -5,7 +5,7 @@
 
 ![键位](https://img.shields.io/badge/翻页-←→-black) ![全屏](https://img.shields.io/badge/全屏-F-black) ![摄像头](https://img.shields.io/badge/摄像头-C-ff5757)
 
-## 30 秒上手
+## 30 秒上手（老师闭环）
 
 ```bash
 # 1. 用本模板起一个新讲座（二选一）
@@ -15,11 +15,16 @@ cd my-talk
 # 2. 装依赖 + 启动
 npm install        # 或 bun install
 npm run dev        # 打开 http://localhost:5173
+```
 
-# 3. 放映
-#   ← →  翻页    F 全屏    C 开/关右下角摄像头（录播露脸）
+```text
+# 3. 在 Claude Code 里说人话填内容（本仓库自带 /add-slide skill）
+/add-slide 讲"我们学校的 AI 课程体系"的一页
+```
 
-# 4. 出成品
+```bash
+# 4. 放映：← → 翻页    F 全屏    C 开/关右下角摄像头（录播露脸）
+# 5. 出成品
 npm run build      # 产物在 dist/，丢到任意静态托管即可
 ```
 
